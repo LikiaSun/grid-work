@@ -1,0 +1,41 @@
+{
+  "name": "work",
+  "version": "0.0.1",
+  "main": "main.js",
+  "author": "Likia Sun",
+  "description": "A grid work",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "webpack-dev-server --config ./build/webpack.dev.js --color --progress",
+    "build": "webpack --config ./build/webpack.prod.js --color --progress"
+  },
+  "dependencies": {
+    "cross-env": "^6.0.3",
+    "svelte": "^3.12.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.0",
+    "eslint": "^6.5.1",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-svelte3": "^2.7.3",
+    "html-webpack-plugin": "^3.2.0",
+    "prettier": "^1.18.2",
+    "prettier-plugin-svelte": "^0.7.0",
+    "pug": "^2.0.4",
+    "robotstxt-webpack-plugin": "^6.0.0",
+    "style-loader": "^1.0.0",
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2",
+    "svelte-loader": "^2.13.6",
+    "svelte-preprocess": "^3.1.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2",
+    "webpack-merge": "^4.2.2",
+    "workbox-webpack-plugin": "^4.3.1"
+  }
+}
