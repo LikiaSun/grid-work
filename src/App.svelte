@@ -1,9 +1,5 @@
 <script>
-  export let name
+  import Main from './pages/Main.svelte'
 </script>
 
-<style src="./style/style.styl">
-
-</style>
-
-<h1>Hi {name}</h1>
+<Main />
