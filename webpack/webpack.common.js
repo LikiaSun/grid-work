@@ -37,6 +37,17 @@ module.exports = {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
       },
+      {
+        test: /\.(woff|ttf|eot|svg)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 100000,
+            },
+          },
+        ],
+      },
     ],
   },
   plugins: [
@@ -44,6 +55,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: path.resolve(__dirname, '..', 'src/public/index.html'),
+      favicon: path.resolve(__dirname, '..', 'src/public/favicon.png'),
       minify: {
         collapseWhitespace: true,
       },
